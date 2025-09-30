@@ -1,0 +1,418 @@
+main {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: url(https://res.cloudinary.com/dba5qhf2v/image/upload/v1759200929/12966_gumpjj.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-family: "Google Sans Code", monospace;
+}
+
+#mi {
+    color: greenyellow !important;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #ffffffed;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    user-select: none;
+}
+
+header {
+    background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.profile-img-placeholder {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    transition: transform 0.3s;
+}
+
+.profile-img-placeholder:hover {
+    transform: scale(1.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1.8rem !important;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    animation-name: Ingreso;
+    animation-duration: 0.8s;
+    transition: all 0.3s ease-in;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1em;
+}
+
+footer {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #000000;
+    color: greenyellow;
+}
+
+.contact-item a {
+    color: greenyellow;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.contact-item:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.cv-content {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+}
+
+.left-column {
+    border-right: 1px solid #e5e7eb;
+    padding-right: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #1e3a8a;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 20px;
+    height: 3px;
+    background: #f59e0b;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.parallax-section {
+    background: url(https://r4.wallpaperflare.com/wallpaper/854/450/467/black-black-panther-purple-low-poly-wallpaper-e920083da1ba9dcbb697886f2001d65d.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 60px 30px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+.parallax-section p {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-size: 1.2em;
+    max-width: 80%;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(200px);
+    animation: fadeInUp 1s forwards;
+    color: rgb(13, 211, 255) !important;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #3b82f6;
+    border-radius: 2px;
+}
+
+.timeline-date {
+    display: block;
+    color: #6b7280;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.timeline-title {
+    font-size: 1.2em;
+    color: #1e3a8a;
+    margin-bottom: 5px;
+}
+
+.timeline-subtitle {
+    font-size: 1em;
+    color: #4b5563;
+    margin-bottom: 5px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    user-select: none;
+}
+
+.skill-tag {
+    background: #fef3c7;
+    color: #1e3a8a;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.skill-tag:hover {
+    transform: translateY(-3px);
+    background: #f59e0b;
+    color: #000000;
+}
+
+.progress-container {
+    margin-bottom: 15px;
+}
+
+.progress-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #1e3a8a;
+}
+
+.progress-bar {
+    background: #d1d5db;
+    border-radius: 5px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    height: 100%;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    user-select: none;
+}
+
+.grid-item {
+    background: #e0f2fe;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-title {
+    font-size: 1em;
+    color: #1e3a8a;
+    margin-bottom: 5px;
+}
+
+.btn-info {
+    color: rgb(0, 0, 0) !important;
+}
+
+.btn:hover {
+    background: #d97706;
+    transform: scale(1.1);
+    opacity: 1;
+    transition: transform 0.3s;
+    text-transform: uppercase;
+    color: rgb(186, 186, 186) !important;
+    background-color: rgb(48, 149, 233) !important;
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Ingreso {
+    0% {
+        opacity: 0;
+        margin-left: 100%;
+        font-size: 0%;
+    }
+
+    20% {
+        opacity: 0.2;
+        margin-left: 50%;
+    }
+    40% {
+        opacity: 0.4;
+        margin-left: -50%;
+    }
+    60% {
+        opacity: 0.6;
+        margin-left: -100%;
+    }
+    80% {
+        opacity: 0.8;
+        margin-left: 50%;
+    }
+    100% {
+        opacity: 1;
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 990px) {
+
+    body {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    h2,
+    h3,
+    h4 {
+        color: #d1d5db !important;
+    }
+
+    .cv-content {
+        background-color: #4975ed98;
+        color: #d1d5db;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .contact-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-item {
+        background: #6b6b6bc5;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .cv-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: #47f900;
+        border-radius: 2px;
+    }
+
+    .left-column {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    .progress-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        font-size: 0.9em;
+        color: #ffffff;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .parallax-section p {
+        font-size: 1em;
+        margin: 0 auto;
+        opacity: 0;
+        transform: translateY(200px);
+        animation: fadeInUp 1s forwards;
+        color: rgb(13, 211, 255) !important;
+    }
+
+    .parallax-section {
+        background: url('https://res.cloudinary.com/dba5qhf2v/image/upload/v1759241407/wallpaperflare.com_wallpaper_re93yk.jpg') no-repeat center center fixed;
+        background-size: cover;
+        background-attachment: fixed;
+    }    
+
+}
