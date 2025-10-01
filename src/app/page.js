@@ -24,7 +24,8 @@ export default function Home() {
         <section className="parallax-section container">
           <h2 id="mi">UN POCO SOBRE MI</h2>
           <hr></hr>
-          <p>Soy un apasionado por la tecnología y la informática.<br></br>
+          <p>Soy un apasionado por la tecnología y la informática.
+            <br></br>
             Este año, 2025, hice mi primer contacto academicamente con una diplomatura en Desarrollo web
             Full Stack con react en la UTN.BA. Donde descubrí mi entusiasmo por crear soluciones digitales innovadoras.
             Actualmente estudio una Tecnicatura en Programacion en la UTN de Avellaneda.
@@ -121,6 +122,8 @@ export default function Home() {
                 <span className="skill-tag">Photoshop</span>
                 <span className="skill-tag">Linux</span>
                 <span className="skill-tag">Soporte técnico</span>
+                <span className="skill-tag">Ensamble hardware</span>
+                <span className="skill-tag">Paquete Office</span>
               </div>
             </section>
 
