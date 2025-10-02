@@ -5,8 +5,8 @@ const Footer = (props) => {
     return (
         <>
             <footer>
-                <a
-                    href="/curriculumMilani.pdf"
+                {/* <a
+                    href="/"
                     download
                     className="btn btn-primary mt-2"
                     style={{
@@ -18,7 +18,7 @@ const Footer = (props) => {
                     }}
                 >
                     <i className="fa-solid fa-download"></i> Download resume
-                </a>
+                </a> */}
                 <p>Diseñado por Agustin Milani - &copy;2025</p>
             </footer>
         </>
