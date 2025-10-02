@@ -46,15 +46,6 @@ export default function Home() {
             <section className="section">
               <h2 className="section-title">Proyectos <i className="fa-solid fa-check"></i></h2>
               <div className="timeline-item">
-                <span className="timeline-date">2025 - Presente</span>
-                <h3 className="timeline-title">Portafolio Personal</h3><h3 style={{fontSize: '0.9rem'}}>(el que estas viendo <i className="fa-regular fa-face-smile"></i>)</h3>
-
-                <h4 className="timeline-subtitle">Proyecto Personal</h4>
-                <p>Desarrollo de un sitio web responsivo con Next.js (framework de React) para mostrar proyectos
-                  personales.</p>
-                <a href="/" target="_blank" className="btn btn-dark">Ver Proyecto</a>
-              </div>
-              <div className="timeline-item">
                 <span className="timeline-date">2025</span>
                 <h3 className="timeline-title">BENMAN Cerveceria</h3>
 
@@ -80,6 +71,15 @@ export default function Home() {
                   Fue mi primer proyecto personal, aplicando algunos frameworks y JS basico.
                 </p>
                 <a href="https://project-own-nine.vercel.app/" target="_blank" className="btn btn-dark">Ver Proyecto</a>
+              </div>
+              <div className="timeline-item">
+                <span className="timeline-date">2025 - Presente</span>
+                <h3 className="timeline-title">Portafolio Personal</h3><h3 style={{fontSize: '0.9rem'}}></h3>
+
+                <h4 className="timeline-subtitle">Proyecto Personal</h4>
+                <p>Desarrollo de un sitio web responsivo con Next.js (framework de React) para mostrar proyectos
+                  personales.</p>
+                <a href="/" target="_blank" className="btn btn-dark">Ver Proyecto</a>
               </div>
             </section>
 
